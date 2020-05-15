@@ -1,3 +1,4 @@
+I had a lot of trouble setting up the emulator since .
 # avarshala
 
 A new Flutter project.
