@@ -12,6 +12,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Networking Test",
+      theme: ThemeData(
+          // Use the old theme but apply the following three changes
+            textTheme: Theme.of(context).textTheme.apply(
+                
+                bodyColor: Colors.black,
+                displayColor: Colors.black)),
       home: Home()
     );
   }

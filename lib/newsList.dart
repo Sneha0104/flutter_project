@@ -24,24 +24,45 @@ class NewsListState extends State<NewsList> {
 
   }
 
-  ListTile _buildItemsForListView(BuildContext context, int index) {
-      return ListTile(
-        title: _newsArticles[index].urlToImage == null ? Image.asset(Constants.NEWS_PLACEHOLDER_IMAGE_ASSET_URL) : Image.network(_newsArticles[index].urlToImage), 
-        subtitle: Text(_newsArticles[index].title, style: TextStyle(fontSize: 18)),
-      );
-  }
-
+ 
+      
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('News Test'),
-        ),
-        body: ListView.builder(
+        
+        body: new ListView.builder ( 
+       
+          
           itemCount: _newsArticles.length,
-          itemBuilder: _buildItemsForListView,
-        )
-      );
+            itemBuilder: (BuildContext context, int index) {
+            return new Container(
+            padding: EdgeInsets.all(14.0),
+            child: new ListTile(
+                  title: _newsArticles[index].urlToImage == null ? Image.asset(Constants.NEWS_PLACEHOLDER_IMAGE_ASSET_URL) : Image.network(_newsArticles[index].urlToImage), 
+                  subtitle: Text(_newsArticles[index].title, style: TextStyle(fontSize: 18)),
+                                ),
+                               
+            decoration:
+                new BoxDecoration(
+                
+                    color: Colors.pink[50],
+                     border: Border(
+             
+    
+    ),
+               borderRadius: new BorderRadius.only(
+                
+                topLeft: const Radius.circular(40.0),
+                topRight: const Radius.circular(40.0),
+                bottomLeft: const Radius.circular(40.0),
+                bottomRight: const Radius.circular(40.0),
+              )
+            )
+                            );
+                  
+            }
+      )
+    );
   }
 }
 
