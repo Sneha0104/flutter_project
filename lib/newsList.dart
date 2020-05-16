@@ -46,10 +46,7 @@ class NewsListState extends State<NewsList> {
                 new BoxDecoration(
                 
                     color: Colors.pink[50],
-                     border: Border(
-             
-    
-    ),
+                   
                borderRadius: new BorderRadius.only(
                 
                 topLeft: const Radius.circular(40.0),
