@@ -1,27 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'newsList.dart';
 import 'home.dart';
-import 'newsfeeds.dart';
-import 'description.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(App());
 
-class MyApp extends StatelessWidget {
-  final routes = <String, WidgetBuilder>{
-    HomePage.tag: (context) => HomePage(),
-    DescriptionPage.tag: (context) => DescriptionPage(null),
-    NewsFeedPage.tag: (context) => NewsFeedPage(null)
-  };
+
+class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
-        //fontFamily: 'Nunito',
-      ),
-      home: HomePage(),
-      routes: routes,
+      title: "Networking Test",
+      home: Home()
     );
   }
+
 }

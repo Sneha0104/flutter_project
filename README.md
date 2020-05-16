@@ -1,17 +1,17 @@
-I had a lot of trouble setting up the emulator since .
-# avarshala
 
+# avarshala
+# Sneha Saj
 A new Flutter project.
 
-## Getting Started
+The link that guided me through the process:
+https://medium.com/flutter-community/fetching-data-in-flutter-and-displaying-in-listview-ec1bb72af22c
 
-This project is a starting point for a Flutter application.
+I realized building from scratch and using api were new topics for me, since I have only worked on simple front-end flutter development for one day.
 
-A few resources to get you started if this is your first Flutter project:
+Things done:
+1) I made tabs for today, week, month.
+2) I used the api and got the data in the app.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Things not done:
+1) I haven't filtered the news into today , week and month.
+2) The image as well as the news url isn't clickable yet.
